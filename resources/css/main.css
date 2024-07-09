@@ -1,3 +1,71 @@
-svg {
-    background-color: black;
+/* Imports */
+
+/* Globals */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    overscroll-behavior-y: none;
+}
+
+::selection {
+    background-color: rgba(0, 230, 184, 0.2);
+}
+
+/* Header */
+
+header {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(14.9px);
+    height: 80px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.header-logo {
+    height: 21px;
+    width: 80px;
+    margin-left: 24px;
+    flex-shrink: 0;
+}
+
+.header-nav {
+    margin: 0 auto;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-link-container {
+    list-style-type: none;
+    margin: 0 24px;
+}
+
+.header-link {
+    color: #767676;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header-download-button {
+    background-color: #04ddb2;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    width: 129px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    margin-right: 24px;
 }
