@@ -93,29 +93,68 @@
             </g>
         </symbol>
         <symbol viewBox="-0.5 0 25 25" id="hamburger-icon">
-            
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> 
+                <path d="M2 12.32H22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+                <path d="M2 18.32H22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+                <path d="M2 6.32001H22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+            </g>
+        </symbol>
+        <symbol viewBox="-0.5 0 25 25" id="close-icon">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> 
+                <path d="M3 21.32L21 3.32001" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+                <path d="M3 3.32001L21 21.32" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+            </g>
         </symbol>
     </svg> <!--My SVG Icon Directory-->
     <header>
-        <a href="second.html">
-            <svg class="header-logo">
-                <use href="#logo-icon"></use>
-            </svg>
-        </a>
-        <nav class="header-nav">
-            <ul class="header-nav-list">
-                <li class="header-link-container"><a href="second.html" class="header-link">Overview</a></li>
-                <li class="header-link-container"><a href="second.html" class="header-link">Examples</a></li>
-                <li class="header-link-container"><a href="second.html" class="header-link">Tour</a></li>
-                <li class="header-link-container"><a href="second.html" class="header-link">Blog</a></li>
-                <li class="header-link-container"><a href="second.html" class="header-link">Help</a></li>
-            </ul>
-        </nav>
-        <a href="second.html">
-            <button type="button" class="header-download-button">Download</button>
-        </a>
+        <div class="header-container">
+            <a href="second.html">
+                <svg class="header-logo">
+                    <use href="#logo-icon"></use>
+                </svg>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-link-container"><a href="second.html" class="header-link">Overview</a></li>
+                    <li class="header-link-container"><a href="second.html" class="header-link">Examples</a></li>
+                    <li class="header-link-container"><a href="second.html" class="header-link">Tour</a></li>
+                    <li class="header-link-container"><a href="second.html" class="header-link">Blog</a></li>
+                    <li class="header-link-container"><a href="second.html" class="header-link">Help</a></li>
+                </ul>
+            </nav>
+            <a href="second.html">
+                <button type="button" class="header-download-button">Download</button>
+            </a>
+            <button type="button" class="mobile-menu-button">
+                <svg id="mobile-menu-open-button" class="mobile-menu-button-states">
+                    <use href="#hamburger-icon"></use>
+                </svg>
+                <svg id="mobile-menu-close-button" class="mobile-menu-button-states off">
+                    <use href="#close-icon"></use>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-nav-container">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-link-container"><a href="second.html" class="mobile-nav-link">Overview</a></li>
+                    <li class="mobile-nav-link-container"><a href="second.html" class="mobile-nav-link">Examples</a></li>
+                    <li class="mobile-nav-link-container"><a href="second.html" class="mobile-nav-link">Tour</a></li>
+                    <li class="mobile-nav-link-container"><a href="second.html" class="mobile-nav-link">Blog</a></li>
+                    <li class="mobile-nav-link-container"><a href="second.html" class="mobile-nav-link">Help</a></li>
+                </ul>
+            </nav>
+            <button type="button" id="mobile-nav-download-button">Download</button>
+        </div>
     </header>
     <main>
+        <h1 class="main-heading">Lobe <span class="main-heading-special">Tour</span></h1>
+        <p class=" tagline">Build your first machine learning model in ten minutes. No code or experience required.</p>
+        <div id="Please-Destroy-Me"></div>
     </main>
 </body>
 </html>

@@ -2,8 +2,15 @@
 
 /* Globals */
 
+#Please-Destroy-Me {
+    background-color: #04ddb2;
+    width: 100vw;
+    height: 200vh;
+}
+
 * {
     box-sizing: border-box;
+    color: #333;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
@@ -19,12 +26,17 @@ body {
 /* Header */
 
 header {
+    display: block;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
     background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(14.9px);
+    backdrop-filter: blur(20px);
+}
+
+.header-container {
     height: 80px;
-    display: flex;
-    position: sticky;
-    top: 0;
+    display: block flex;
     width: 100%;
     align-items: center;
     padding: 0 40px;
@@ -68,4 +80,126 @@ header {
     border: none;
     border-radius: 24px;
     margin-right: 24px;
+}
+
+.mobile-menu-button {
+    display: none;
+    background-color: #eef0f2;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: auto;
+}
+
+.mobile-menu-button-states {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-menu-button-states.off {
+    display: none;
+}
+
+/* Mobile Nav */
+
+#mobile-nav-container {/*Display is set to none for now, onclick height should transition from 0 to 484*/
+    display: none;
+    width: 100vw;
+    height: 484px;
+    border-top: #bdbdbd solid 0.1px;
+    overflow: hidden;
+}
+
+.mobile-nav-list {
+    padding: 0;
+}
+
+.mobile-nav-link-container {
+    list-style-type: none;
+    padding: 20px 31px;
+}
+
+.mobile-nav-link {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.mobile-nav-link:hover {
+    color: #000;
+}
+
+#mobile-nav-download-button {
+    background-color: #04ddb2;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    width: calc(100vw - 52px);
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    margin: 37px 26px 32px;
+}
+
+/* Main */
+
+main {
+    padding-top: 80px;
+}
+
+.main-heading {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 4rem;
+    margin: 0px 0px 12px;
+    line-height: 1.05;
+}
+
+.main-heading-special {
+    color: #04ddb2;
+}
+
+.tagline {
+    font-size: 26px;
+    line-height: 1.45;
+    text-align: center;
+    margin: 0 auto 40px;
+    max-width: 600px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1200px) {
+
+    .header-link-container {
+        margin: 0 20px;
+    }
+
+    .main-heading {
+        font-size: 3.5rem;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .header-nav, .header-download-button {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
 }
