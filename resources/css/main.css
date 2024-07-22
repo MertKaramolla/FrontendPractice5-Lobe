@@ -82,14 +82,20 @@ header {
     margin-right: 24px;
 }
 
-.mobile-menu-button {
+#mobile-menu-button {
     display: none;
     background-color: #eef0f2;
     width: 40px;
     height: 40px;
     border-radius: 20px;
     border: none;
+    padding: 10px;
     margin-left: auto;
+}
+
+.hamburger-holder {
+    width: 20px;
+    height: 20px;
 }
 
 .mobile-menu-button-states {
@@ -199,7 +205,7 @@ main {
         display: none;
     }
 
-    .mobile-menu-button {
+    #mobile-menu-button {
         display: block;
     }
 }
