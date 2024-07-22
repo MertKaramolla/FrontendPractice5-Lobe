@@ -98,17 +98,25 @@ header {
     height: 20px;
 }
 
-.mobile-menu-button-states {
-    position: absolute;
-    top: 25px;
-    right: 45px;
-    width: 30px;
-    height: 30px;
+.hamburger-icon-lines {
+    position: relative;
+    transition: transform 1s ease-in;
 }
 
-.mobile-menu-button-states.off {
+.hamburger-icon-top.open {
+    transform: rotate(45deg);
+    transform-origin: 2px 5px;
+}
+
+.hamburger-icon-middle.open {
     display: none;
 }
+
+.hamburger-icon-bottom.open {
+    transform: rotate(-45deg);
+    transform-origin: 2px 15px;
+}
+
 
 /* Mobile Nav */
 
