@@ -10,6 +10,13 @@ function toggleMobileMenu() {
             line.classList.add('open');
         });
         console.log("mobile menu is now open")
+    } else {
+        console.log("mobile menu is open");
+        mobileMenu.classList.remove('open');
+        hamburgerIconLines.forEach(line => {
+            line.classList.remove('open');
+        });
+        console.log("mobile menu is now closed")
     };
 };
 

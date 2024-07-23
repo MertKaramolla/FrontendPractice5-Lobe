@@ -30,7 +30,7 @@ header {
     position: fixed;
     top: 0px;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
 }
 
@@ -100,7 +100,13 @@ header {
 
 .hamburger-icon-lines {
     position: relative;
-    transition: transform 1s ease-in;
+    opacity: 1;
+    transition: transform 0.3s ease-in, opacity 0.3s linear;
+}
+
+.hamburger-icon-top {
+    transform: rotate(0deg);
+    transform-origin: 2px 5px;
 }
 
 .hamburger-icon-top.open {
@@ -108,8 +114,17 @@ header {
     transform-origin: 2px 5px;
 }
 
+.hamburger-icon-middle {
+    opacity: 1;
+}
+
 .hamburger-icon-middle.open {
-    display: none;
+    opacity: 0;
+}
+
+.hamburger-icon-bottom {
+    transform: rotate(0deg);
+    transform-origin: 2px 15px;
 }
 
 .hamburger-icon-bottom.open {
@@ -120,12 +135,27 @@ header {
 
 /* Mobile Nav */
 
-#mobile-nav-container {/*Display is set to none for now, onclick height should transition from 0 to 484*/
-    display: none;
+#mobile-nav-container {
+    border-top: none;
     width: 100vw;
-    height: 484px;
-    border-top: #bdbdbd solid 0.1px;
+    height: 0px;
     overflow: hidden;
+    transition: height 0.3s ease-in;
+}
+
+#mobile-nav-container.open {
+    border-top: #bdbdbd solid 0.1px;
+    height: 484px;
+    transition: height 0.3s ease-in;
+}
+
+.mobile-nav {
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+}
+
+#mobile-nav-container.open .mobile-nav {
+    opacity: 1;
 }
 
 .mobile-nav-list {
@@ -138,6 +168,7 @@ header {
 }
 
 .mobile-nav-link {
+    display: block;
     color: #333;
     font-size: 1.25rem;
     font-weight: 500;
