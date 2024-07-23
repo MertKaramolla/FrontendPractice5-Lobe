@@ -70,6 +70,12 @@ header {
     text-decoration: none;
 }
 
+.header-link:hover {
+    color: #000;
+    font-size: 1.135rem;
+    cursor: pointer;
+}
+
 .header-download-button {
     background-color: #04ddb2;
     color: #fff;
@@ -218,6 +224,29 @@ main {
     text-align: center;
     margin: 0 auto 40px;
     max-width: 600px;
+}
+
+
+/* Main / VideoImage Section */
+
+.video-image-holder {
+    max-width: 960px;
+    padding: 0 64px;
+    margin: 24px auto 0;
+    transition: padding 0.1s ease-in;
+}
+
+.video-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.video-image-holder:hover{
+    padding: 0 54px;
+    filter: drop-shadow(20px 20px 15px rgba(0, 0, 0, 0.06));
+    cursor: pointer;
 }
 
 /* Media Queries */
