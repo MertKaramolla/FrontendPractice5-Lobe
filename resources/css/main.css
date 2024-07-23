@@ -104,8 +104,8 @@ header {
 }
 
 .hamburger-icon-top.open {
-    transform: rotate(45deg);
-    transform-origin: 4px 5px;
+    transform: rotate(32deg) scale(1.19, 1);
+    transform-origin: 2px 5px;
 }
 
 .hamburger-icon-middle.open {
@@ -113,8 +113,8 @@ header {
 }
 
 .hamburger-icon-bottom.open {
-    transform: rotate(-45deg);
-    transform-origin: 4px 15px;
+    transform: rotate(-32deg) scale(1.19, 1);
+    transform-origin: 2px 15px;
 }
 
 
