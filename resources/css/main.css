@@ -87,6 +87,7 @@ header {
     border: none;
     border-radius: 24px;
     margin-right: 24px;
+    cursor: pointer;
 }
 
 .header-download-button:hover {
@@ -254,6 +255,45 @@ main {
     cursor: pointer;
 }
 
+/* iFrame Modal */
+
+.modal-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+}
+
+.modal-close-button {
+    position: absolute;
+    right: 0;
+    display: block;
+    opacity: 0.33;
+    width: 32px;
+    height: 32px;
+    margin: 24px 24px;
+    cursor: pointer;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.youtube-video {
+    align-self: center;
+    width: 100%;
+    height: calc(80vw * 9 / 16);
+    border-radius: 20px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width:1200px) {
@@ -284,6 +324,7 @@ main {
 }
 
 @media screen and (max-width:650px) {
+
     .main-heading {
         font-size: 2.4rem;
         margin-bottom: 8px;
@@ -293,4 +334,18 @@ main {
         font-size: 1.125rem;
         max-width: 400px;
     }
+
+    .modal-close-button {
+        display: none;
+    }
+
+    .video-container {
+        width: 100vw;
+    }
+
+    .youtube-video {
+        height: calc(100vw * 9 / 16);
+        border-radius: 0;
+    }
+
 }

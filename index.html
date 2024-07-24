@@ -154,13 +154,19 @@
         <section>
             <h1 class="main-heading">Lobe <span class="main-heading-special">Tour</span></h1>
             <p class=" tagline">Build your first machine learning model in ten minutes. No code or experience required.</p>
-            <article class="video-image-holder" id="videoLink">
+            <article class="video-image-holder" id="youtube-frame-open-button">
                 <img src="https://www.lobe.ai/assets/tour/Video.jpg" alt="link to lobe Ai introduction video" loading="lazy" class="video-image" height="1126px" width="2000px">
             </article>
         </section>
-        <dialog id="youtube-frame">
-            <h2 id="closeThatShit">yo yo yo</h1>
-        </dialog>
+        <article id="youtube-frame" class="modal-container">
+            <svg id="youtube-frame-close-button" viewBox="0 0 20 20" class="modal-close-button">
+                <line x1="2" y1="2" x2="18" y2="18" stroke="white" stroke-width="2px"></line>
+                <line x1="2" y1="18" x2="18" y2="2" stroke="white" stroke-width="2px"></line>
+            </svg>
+            <div class="video-container">
+                <iframe id="embedded-video" class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/Mdcw3Sb98DA?si=0EpwAhT7qu2222jf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </article>
         <section>
             <h2>Train your app with Lobe</h2>
         </section>

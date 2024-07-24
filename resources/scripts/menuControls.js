@@ -3,6 +3,11 @@
 const hamburger = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-nav-container");
 const hamburgerIconLines = document.querySelectorAll(".hamburger-icon-lines");
+const openVideoButt = document.getElementById("youtube-frame-open-button");
+const youtubeFrame = document.getElementById("youtube-frame");
+const closeVideoButt = document.getElementById("youtube-frame-close-button");
+const iFrame = document.getElementById("embedded-video")
+
 
 /* Mobile Menu Events */
 
@@ -28,3 +33,20 @@ hamburger.addEventListener('click', toggleMobileMenu);
 
 /* Modal iFrame Events */
 
+function openModal() {
+    youtubeFrame.style.display = "block";
+    iFrame.src = "https://www.youtube.com/embed/Mdcw3Sb98DA?autoplay=1";
+};
+
+function closeModal() {
+    youtubeFrame.style.display = "none";
+    iFrame.src = "";
+};
+
+openVideoButt.addEventListener('click', openModal);
+closeVideoButt.addEventListener('click', closeModal);
+youtubeFrame.addEventListener('click', event => {
+    if (event.target !== iFrame) {
+        closeModal();
+    }
+});
