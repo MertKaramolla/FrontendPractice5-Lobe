@@ -2,12 +2,6 @@
 
 /* Globals */
 
-#Please-Destroy-Me {
-    background-color: #04ddb2;
-    width: 100vw;
-    height: 200vh;
-}
-
 * {
     box-sizing: border-box;
     color: #333;
@@ -88,6 +82,7 @@ header {
     border-radius: 24px;
     margin-right: 24px;
     cursor: pointer;
+    transition: transform 0.1s linear;
 }
 
 .header-download-button:hover {
@@ -317,10 +312,96 @@ main {
     border-radius: 32px;
     margin: 0 auto 100px;
     cursor: pointer;
+    transition: transform 0.1s linear;
 }
 
 .hero-download-button:hover {
     transform: scale3d(1.05, 1.05, 1.05);
+}
+
+
+/* Footer Section */
+
+footer {
+    padding: 0 32px 32px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1072px;
+    padding: 60px 80px;
+    border-top: rgba(0, 0, 0, 0.2) solid 0.5px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    background-color: #04ddb2;
+}
+
+.footer-copyright {
+    background-color: indianred;
+    padding-right: 1rem;
+}
+
+.footer-logo {
+    display: block;
+    width: 68px;
+    height: 18px;
+    margin-bottom: 30px;
+}
+
+.copyright-text {
+    white-space: nowrap;
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 24px;
+}
+
+.footer-link-column {
+    padding: 0 1rem;
+}
+
+.footer-column-title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.footer-column-link {
+    display: block;
+    color: #333;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.1s linear, transform 0.1s linear;
+}
+
+.footer-column-link:hover {
+    color: #000;
+    transform: scale3d(1.025, 1.025, 1.025);
+}
+
+.footer-socials {
+    background-color: hotpink;
+}
+
+.footer-social-button {
+    display: inline-block;
+    background-color: #04ddb2;
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+    margin: 0 8px;
+    border-radius: 50%;
+}
+
+.footer-social-icon {
+    width: 26px;
+    height: 26px;
 }
 
 
@@ -334,11 +415,25 @@ main {
 
     .main-heading {
         font-size: 3.5rem;
+        padding-top: 2.5rem;
     }
 
     .tagline {
         font-size: 1.5rem;
         max-width: 550px;
+    }
+
+    .footer-social-button {
+        display: block;
+        margin: 8px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .footer-social-icon {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -373,9 +468,19 @@ main {
         width: 100vw;
     }
 
+    .video-image-holder {
+        padding-top: 22px;
+    }
+
     .youtube-video {
         height: calc(100vw * 9 / 16);
         border-radius: 0;
+    }
+
+    .hero-header {
+        font-size: 38px;
+        max-width: 300px;
+        margin: 55px auto 32px;
     }
 
 }
