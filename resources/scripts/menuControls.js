@@ -43,6 +43,17 @@ function closeModal() {
     iFrame.src = "";
 };
 
+function closeModalOnResize() {
+    if(window.innerWidth > 650 && mobileMenu.classList.contains('open')) {
+        console.log("mobile menu is open during resize");
+        mobileMenu.classList.remove('open');
+        hamburgerIconLines.forEach(line => {
+            line.classList.remove('open');
+        });
+        console.log("mobile menu is now closed")
+    }
+}
+
 openVideoButt.addEventListener('click', openModal);
 closeVideoButt.addEventListener('click', closeModal);
 youtubeFrame.addEventListener('click', event => {
@@ -50,3 +61,5 @@ youtubeFrame.addEventListener('click', event => {
         closeModal();
     }
 });
+
+window.addEventListener('resize', closeModalOnResize);
