@@ -1,6 +1,10 @@
+/* Ma Variables */
+
 const hamburger = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-nav-container");
 const hamburgerIconLines = document.querySelectorAll(".hamburger-icon-lines");
+
+/* Mobile Menu Events */
 
 function toggleMobileMenu() {
     if (!mobileMenu.classList.contains('open')) {
@@ -21,3 +25,6 @@ function toggleMobileMenu() {
 };
 
 hamburger.addEventListener('click', toggleMobileMenu);
+
+/* Modal iFrame Events */
+

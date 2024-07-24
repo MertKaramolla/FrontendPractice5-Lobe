@@ -32,6 +32,7 @@ header {
     width: 100vw;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
+    z-index: 2;
 }
 
 .header-container {
@@ -86,6 +87,10 @@ header {
     border: none;
     border-radius: 24px;
     margin-right: 24px;
+}
+
+.header-download-button:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
 }
 
 #mobile-menu-button {
@@ -206,7 +211,7 @@ main {
 }
 
 .main-heading {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 900;
     text-align: center;
     padding-top: 4rem;
@@ -230,22 +235,22 @@ main {
 /* Main / VideoImage Section */
 
 .video-image-holder {
-    max-width: 960px;
-    padding: 0 64px;
-    margin: 24px auto 0;
-    transition: padding 0.1s ease-in;
+    max-width: 1272px;
+    width: 100%;
+    padding: 32px 64px 0;
+    margin: 0 auto;
+    transition: padding 0.1s ease-in, filter 0.1s ease-in 0.02s;
 }
 
 .video-image {
-    display: block;
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 .video-image-holder:hover{
-    padding: 0 54px;
-    filter: drop-shadow(20px 20px 15px rgba(0, 0, 0, 0.06));
+    padding: 21px 54px 0;
+    filter: drop-shadow(0px 15px 35px rgba(0, 0, 0, 0.1));
     cursor: pointer;
 }
 
