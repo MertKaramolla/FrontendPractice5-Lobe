@@ -251,7 +251,7 @@ main {
 
 .video-image-holder:hover{
     padding: 21px 54px 0;
-    filter: drop-shadow(0px 15px 35px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 45px 65px rgba(0, 0, 0, 0.2));
     cursor: pointer;
 }
 
@@ -293,6 +293,36 @@ main {
     height: calc(80vw * 9 / 16);
     border-radius: 20px;
 }
+
+
+/* Hero Section */
+
+.hero-header {
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+    max-width: 500px;
+    margin: 100px auto 48px;
+}
+
+.hero-download-button {
+    display: block;
+    background-color: #04ddb2;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 168px;
+    height: 50px;
+    border: none;
+    border-radius: 32px;
+    margin: 0 auto 100px;
+    cursor: pointer;
+}
+
+.hero-download-button:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
 
 /* Media Queries */
 
