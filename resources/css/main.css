@@ -343,12 +343,7 @@ footer {
     margin: 0 auto;
 }
 
-.footer-column {
-    background-color: #04ddb2;
-}
-
 .footer-copyright {
-    background-color: indianred;
     padding-right: 1rem;
 }
 
@@ -393,10 +388,6 @@ footer {
     transform: scale3d(1.025, 1.025, 1.025);
 }
 
-.footer-socials {
-    background-color: hotpink;
-}
-
 .footer-social-button {
     display: inline-block;
     background-color: #04ddb2;
@@ -405,6 +396,11 @@ footer {
     padding: 3px;
     margin: 0 8px;
     border-radius: 50%;
+    transition: transform 0.1s ease-in;
+}
+
+.footer-social-button:hover {
+    transform: scale3d(1.15, 1.15, 1.15);
 }
 
 .footer-social-icon {
@@ -495,12 +491,58 @@ footer {
         margin-bottom: 55px;
     }
 
+    footer {
+        padding: 0 24px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        padding: 62px 0;
+        max-width: 350px;
+        justify-content: center;
+    }
+
+    .footer-column {
+        margin-bottom: 72px;
+    }
+
+    .footer-logo {
+        margin: 0 auto 30px;
+    }
+
+    .footer-copyright {
+        order: 5;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-column-first {
+        order: 1;
+    }
+
+    .footer-column-second {
+        order: 2;
+    }
+
+    .footer-column-third {
+        order: 3;
+    }
+
+    .footer-socials {
+        order: 4;
+        margin: 0 51px 72px;
+    }
+
     .footer-column-title {
         margin-bottom: 1rem;
+        text-align: center;
+        padding: 0 16px;
     }
     
     .footer-column-link {
         margin-bottom: 1rem;
+        text-align: center;
+        padding: 0 16px;
     }
 
 }
